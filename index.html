@@ -20,7 +20,7 @@
         </a>
       </div>
       <div class="flex lg:hidden">
-        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
           <span class="sr-only">Open main menu</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
             <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -29,9 +29,9 @@
       </div>
       <el-popover-group class="hidden lg:flex lg:gap-x-12">
     
-        <a href="#services" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Dienstleistungen</a>
-        <a href="#about_us" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Über uns</a>
-        <a href="#contact" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Kontakt</a>
+        <a href="#services" class="text-sm/6 font-semibold text-white">Dienstleistungen</a>
+        <a href="#about_us" class="text-sm/6 font-semibold text-white">Über uns</a>
+        <a href="#contact" class="text-sm/6 font-semibold text-white">Kontakt</a>
       </el-popover-group>
       
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -41,14 +41,14 @@
     <el-dialog>
       <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
         <div tabindex="0" class="fixed inset-0 focus:outline-none">
-          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto p-6 sm:max-w-sm sm:ring-1 bg-gray-900 sm:ring-gray-100/10">
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Alpenbau</span>
-                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" class="h-8 w-auto dark:hidden" />
-                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="" class="h-8 w-auto not-dark:hidden" />
+                <img src="./img/logo.jpeg" alt="" class="h-8 w-auto dark:hidden" />
+                <img src="./img/logo.jpeg" alt="" class="h-8 w-auto not-dark:hidden" />
               </a>
-              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-400">
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-400">
                 <span class="sr-only">Close menu</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
                   <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
@@ -56,22 +56,22 @@
               </button>
             </div>
             <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/10 dark:divide-white/10">
+              <div class="-my-6 divide-y divide-white/10">
                 <div class="space-y-2 py-6">
                   <div class="-mx-3">
                     <el-disclosure id="products" hidden class="mt-2 block space-y-2">
-                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Analytics</a>
-                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Engagement</a>
-                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Security</a>
-                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Integrations</a>
-                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Automations</a>
-                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Watch demo</a>
-                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Contact sales</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold hover:bg-white/5">Analytics</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Engagement</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Security</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Integrations</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Automations</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Watch demo</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Contact sales</a>
                     </el-disclosure>
                   </div>
-                  <a href="#services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Dienstleistungen</a>
-                  <a href="#about_us" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Über uns</a>
-                  <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Kontakt</a>
+                  <a href="#services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Dienstleistungen</a>
+                  <a href="#about_us" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Über uns</a>
+                  <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Kontakt</a>
                 </div>
               </div>
             </div>
@@ -85,16 +85,16 @@
   <!-- Hero Section -->
   <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
-<div class="bg-white dark:bg-gray-900">
+<div class="bg-gray-900">
     <main>
       <div class="relative isolate">
-        <svg aria-hidden="true" class="absolute inset-x-0 top-0 -z-10 h-256 w-full mask-[radial-gradient(32rem_32rem_at_center,white,transparent)] stroke-gray-200 dark:stroke-white/10">
+        <svg aria-hidden="true" class="absolute inset-x-0 top-0 -z-10 h-256 w-full mask-[radial-gradient(32rem_32rem_at_center,white,transparent)] stroke-white/10">
           <defs>
             <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
               <path d="M.5 200V.5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y="-1" class="overflow-visible fill-gray-50 dark:fill-gray-800">
+          <svg x="50%" y="-1" class="overflow-visible fill-gray-800">
             <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
           </svg>
           <rect width="100%" height="100%" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" stroke-width="0" />
@@ -106,37 +106,37 @@
           <div class="mx-auto max-w-7xl px-6 pt-36 pb-32 sm:pt-60 lg:px-8 lg:pt-32">
             <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div class="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-                <h1 class="text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-7xl dark:text-white">Ihr zuverlässiger Partner für Bau, Reparatur & Reinigung aus Kempten</h1>
-                <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none dark:text-gray-400">Von Bodenlegen bis Hausmeisterservice – wir kümmern uns um Ihr Zuhause oder Ihre Immobilie mit Präzision, Sorgfalt und Erfahrung.</p>
+                <h1 class="text-5xl font-semibold tracking-tight text-pretty sm:text-7xl text-white">Ihr zuverlässiger Partner für Bau, Reparatur & Reinigung aus Kempten</h1>
+                <p class="mt-8 text-lg font-medium text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none text-gray-400">Von Bodenlegen bis Hausmeisterservice – wir kümmern uns um Ihr Zuhause oder Ihre Immobilie mit Präzision, Sorgfalt und Erfahrung.</p>
                 <div class="mt-10 flex items-center gap-x-6">
-                    <a href="#contact" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">Jetzt Kontaktieren</a>
+                    <a href="#contact" class="rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-500 hover:bg-indigo-400 focus-visible:outline-indigo-500">Jetzt Kontaktieren</a>
                 </div>
               </div>
               <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                 <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-0 xl:pt-80">
                   <div class="relative">
-                    <img src="./img/reinigung1.jpg" alt="" class="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg dark:bg-gray-700/5" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset dark:ring-white/10"></div>
+                    <img src="./img/reinigung1.jpg" alt="" class="aspect-2/3 w-full rounded-xl object-cover shadow-lg bg-gray-700/5" />
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10"></div>
                   </div>
                 </div>
                 <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div class="relative">
-                    <img src="./img/bau1.jpg" alt="" class="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg dark:bg-gray-700/5" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset dark:ring-white/10"></div>
+                    <img src="./img/bau1.jpg" alt="" class="aspect-2/3 w-full rounded-xl object-cover shadow-lg bg-gray-700/5" />
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10"></div>
                   </div>
                   <div class="relative">
-                    <img src="./img/hausmeister.jpg" alt="" class="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg dark:bg-gray-700/5" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset dark:ring-white/10"></div>
+                    <img src="./img/hausmeister.jpg" alt="" class="aspect-2/3 w-full rounded-xl object-cover shadow-lg bg-gray-700/5" />
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10"></div>
                   </div>
                 </div>
                 <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div class="relative">
-                    <img src="./img/reinigung2.jpg" alt="" class="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg dark:bg-gray-700/5" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset dark:ring-white/10"></div>
+                    <img src="./img/reinigung2.jpg" alt="" class="aspect-2/3 w-full rounded-xl object-cover shadow-lg bg-gray-700/5" />
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10"></div>
                   </div>
                   <div class="relative">
-                    <img src="./img/bau2.jpg" alt="" class="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg dark:bg-gray-700/5" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset dark:ring-white/10"></div>
+                    <img src="./img/bau2.jpg" alt="" class="aspect-2/3 w-full rounded-xl object-cover shadow-lg bg-gray-700/5" />
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10"></div>
                   </div>
                 </div>
               </div>
@@ -150,23 +150,23 @@
 
   <!-- Dienstleistungen -->
 
-  <div class="bg-white py-24 sm:py-32 dark:bg-gray-900" id="services">
+  <div class="py-24 sm:py-32 bg-gray-900" id="services">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:text-center">
-        <h2 class="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">Alles aus einer Hand – zuverlässig, präzise und mit Liebe zum Detail.</h2>
-        <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance dark:text-white">Dienstleistungen</p>
-        <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">Wir kümmern uns um alles – von der kleinen Reparatur bis zur gründlichen Reinigung, damit Sie sich um nichts sorgen müssen.</p>
+        <h2 class="text-base/7 font-semibold text-indigo-400">Alles aus einer Hand – zuverlässig, präzise und mit Liebe zum Detail.</h2>
+        <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl lg:text-balance text-white">Dienstleistungen</p>
+        <p class="mt-6 text-lg/8 text-gray-300">Wir kümmern uns um alles – von der kleinen Reparatur bis zur gründlichen Reinigung, damit Sie sich um nichts sorgen müssen.</p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
         <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div class="flex flex-col">
-            <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900 dark:text-white">
+            <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
                   </svg>                  
               Bau & Reparatur
             </dt>
-            <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600 dark:text-gray-400">
+            <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-400">
               <p class="flex-auto">
                 <ul class="list-disc">
                     <li><b>Bodenleger:</b> Professionelle Verlegung aller Bodenarten</li>
@@ -177,13 +177,13 @@
             </dd>
           </div>
           <div class="flex flex-col">
-            <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900 dark:text-white">
+            <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
                 </svg>                  
               Reinigung & Hausmeisterservice
             </dt>
-            <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600 dark:text-gray-400">
+            <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-400">
               <p class="flex-auto">
                 <ul class="list-disc">
                     <li><b>Teppiche & Böden:</b> Tiefenreinigung für frische Farben und saubere Fasern</li>
@@ -200,45 +200,45 @@
       </div>
       
       <div class="mx-auto max-w-2xl lg:text-center">
-        <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-300 font-bold">Kostenlose Besichtigung in Kempten.</p>
+        <p class="mt-6 text-lg/8 text-gray-300 font-bold">Kostenlose Besichtigung in Kempten.</p>
       </div>
     </div>
   </div>
   <!-- /Dienstleistungen -->
 
   <!-- Über uns -->
-  <div id="about_us" class="overflow-hidden bg-white py-24 sm:py-32 dark:bg-gray-900">
+  <div id="about_us" class="overflow-hidden py-24 sm:py-32 bg-gray-900">
     <div class="relative isolate">
       <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="mx-auto flex max-w-2xl flex-col gap-16 bg-white/75 px-6 py-16 shadow-lg ring-1 ring-gray-900/5 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20 dark:bg-white/3 dark:shadow-none dark:ring-white/10">
-          <img src="./img/logo.jpeg" alt="" class="h-96 w-full flex-none rounded-2xl object-cover shadow-none lg:aspect-square lg:h-auto lg:max-w-sm dark:shadow-xl" />
+        <div class="mx-auto flex max-w-2xl flex-col gap-16 px-6 py-16 ring-1 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20 bg-white/3 shadow-none ring-white/10">
+          <img src="./img/logo.jpeg" alt="" class="h-96 w-full flex-none rounded-2xl object-cover lg:aspect-square lg:h-auto lg:max-w-sm shadow-xl" />
           <div class="w-full flex-auto">
-            <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-950 sm:text-5xl dark:text-white">Über uns</h2>
-            <p class="mt-6 text-lg/8 text-pretty text-gray-600 dark:text-gray-400">Wir verbinden traditionelles Handwerk mit modernen Methoden.<br/>
+            <h2 class="text-4xl font-semibold tracking-tight text-pretty sm:text-5xl text-white">Über uns</h2>
+            <p class="mt-6 text-lg/8 text-pretty text-gray-400">Wir verbinden traditionelles Handwerk mit modernen Methoden.<br/>
                 Von Bodenlegen und Trockenbau bis zu professioneller Reinigung bieten wir alles aus einer Hand.<br/>
                 Unser Anspruch ist es, jedes Projekt effizient, sauber und termingerecht umzusetzen – ganz nach Ihren Vorstellungen.<br/>
             </p>
-            <ul role="list" class="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base/7 text-gray-950 sm:grid-cols-2 dark:text-gray-200">
+            <ul role="list" class="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base/7 sm:grid-cols-2 text-gray-200">
               <li class="flex gap-x-3">
-                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-7 w-5 flex-none text-indigo-500 dark:text-gray-200">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-7 w-5 flex-none text-gray-200">
                   <path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" fill-rule="evenodd" />
                 </svg>
                 Zuverlässig
               </li>
               <li class="flex gap-x-3">
-                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-7 w-5 flex-none text-indigo-500 dark:text-gray-200">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-7 w-5 flex-none text-gray-200">
                   <path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" fill-rule="evenodd" />
                 </svg>
                 Schnell
               </li>
               <li class="flex gap-x-3">
-                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-7 w-5 flex-none text-indigo-500 dark:text-gray-200">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-7 w-5 flex-none text-gray-200">
                   <path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" fill-rule="evenodd" />
                 </svg>
                 Faire Preise
               </li>
               <li class="flex gap-x-3">
-                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-7 w-5 flex-none text-indigo-500 dark:text-gray-200">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-7 w-5 flex-none text-gray-200">
                   <path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" fill-rule="evenodd" />
                 </svg>
                 Langjährige Erfahrung
@@ -255,18 +255,18 @@
   <!-- /Über uns-->
 
   <!-- Kontakt -->
-  <div id="contact" class="bg-white py-8 sm:py-16 dark:bg-gray-900">
+  <div id="contact" class="py-8 sm:py-16 bg-gray-900">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl divide-y divide-gray-100 lg:mx-0 lg:max-w-none dark:divide-white/10">
+      <div class="mx-auto max-w-2xl divide-y lg:mx-0 lg:max-w-none divide-white/10">
         <div class="grid grid-cols-1 gap-10 py-16 lg:grid-cols-3">
           <div>
-            <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">Kontakt</h2>
-            <p class="mt-4 text-base/7 text-gray-600 dark:text-gray-400">Jetzt Angebot anfordern oder Termin vereinbaren – schnell, unkompliziert und kostenlos.</p>
+            <h2 class="text-4xl font-semibold tracking-tight text-pretty text-white">Kontakt</h2>
+            <p class="mt-4 text-base/7 text-gray-400">Jetzt Angebot anfordern oder Termin vereinbaren – schnell, unkompliziert und kostenlos.</p>
           </div>
           <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
-            <div class="rounded-2xl bg-gray-50 p-10 dark:bg-gray-800/50">
-              <h3 class="text-base/7 font-semibold text-gray-900 dark:text-white">Telefon</h3>
-              <dl class="mt-3 space-y-1 text-sm/6 text-gray-600 dark:text-gray-400">
+            <div class="rounded-2xl p-10 bg-gray-800/50">
+              <h3 class="text-base/7 font-semibold text-white">Telefon</h3>
+              <dl class="mt-3 space-y-1 text-sm/6 text-gray-400">
                 <div class="mt-1">
                   <dt class="sr-only">Phone number</dt>
                   <dd>0176 57852908</dd>
@@ -277,12 +277,12 @@
                   </div>
               </dl>
             </div>
-            <div class="rounded-2xl bg-gray-50 p-10 dark:bg-gray-800/50">
-              <h3 class="text-base/7 font-semibold text-gray-900 dark:text-white">Email</h3>
-              <dl class="mt-3 space-y-1 text-sm/6 text-gray-600 dark:text-gray-400">
+            <div class="rounded-2xl p-10 bg-gray-800/50">
+              <h3 class="text-base/7 font-semibold text-white">Email</h3>
+              <dl class="mt-3 space-y-1 text-sm/6 text-gray-400">
                 <div>
                   <dt class="sr-only">Email</dt>
-                  <dd><a href="mailto:alpenteam@mail.de" class="font-semibold text-indigo-600 dark:text-indigo-400">alpenteam@mail.de</a></dd>
+                  <dd><a href="mailto:alpenteam@mail.de" class="font-semibold text-indigo-400">alpenteam@mail.de</a></dd>
                 </div>
               </dl>
             </div>
@@ -295,13 +295,13 @@
   <!-- /Kontakt -->
 
   <!-- Footer -->
-  <footer class="bg-white dark:bg-gray-900">
+  <footer class="bg-gray-900">
     <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
       <nav aria-label="Footer" class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
-        <a href="datenschutz.html" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Datenschutzerklärung</a>
-        <a href="impressum.html" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Impressum</a>
+        <a href="datenschutz.html" class="text-gray-400 hover:text-white">Datenschutzerklärung</a>
+        <a href="impressum.html" class="text-gray-400 hover:text-white">Impressum</a>
       </nav>
-      <p class="mt-10 text-center text-sm/6 text-gray-600 dark:text-gray-400">&copy; 2025 Hikmet Kurtulus. All rights reserved.</p>
+      <p class="mt-10 text-center text-sm/6 text-gray-400">&copy; 2025 Hikmet Kurtulus. All rights reserved.</p>
     </div>
   </footer>  
   <!-- /Footer -->
