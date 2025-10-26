@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alpen Bau Dienstleistungen</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+<header class="bg-gray-900">
+    <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="/" class="-m-1.5 p-1.5">
+          <span class="sr-only">Alpenbau</span>
+          <img src="./img/logo.jpeg" alt="" class="h-8 w-auto dark:hidden" />
+          <img src="./img/logo.jpeg" alt="" class="h-8 w-auto not-dark:hidden" />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <el-popover-group class="hidden lg:flex lg:gap-x-12">
+    
+        <a href="/#services" class="text-sm/6 font-semibold text-white">Dienstleistungen</a>
+        <a href="/#about_us" class="text-sm/6 font-semibold text-white">Über uns</a>
+        <a href="/#contact" class="text-sm/6 font-semibold text-white">Kontakt</a>
+      </el-popover-group>
+      
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        
+      </div>
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto p-6 sm:max-w-sm sm:ring-1 bg-gray-900 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Alpenbau</span>
+                <img src="./img/logo.jpeg" alt="" class="h-8 w-auto dark:hidden" />
+                <img src="./img/logo.jpeg" alt="" class="h-8 w-auto not-dark:hidden" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-400">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <div class="-mx-3">
+                    <el-disclosure id="products" hidden class="mt-2 block space-y-2">
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold hover:bg-white/5">Analytics</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Engagement</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Security</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Integrations</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Automations</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Watch demo</a>
+                      <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Contact sales</a>
+                    </el-disclosure>
+                  </div>
+                  <a href="/#services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Dienstleistungen</a>
+                  <a href="/#about_us" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Über uns</a>
+                  <a href="/#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Kontakt</a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+  <!-- /Navbar -->
+  
+  <div class="bg-gray-900">
+    <main>
+      <div class="relative isolate">
+        <svg aria-hidden="true" class="absolute inset-x-0 top-0 -z-10 h-256 w-full mask-[radial-gradient(32rem_32rem_at_center,white,transparent)] stroke-white/10">
+          <defs>
+            <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+              <path d="M.5 200V.5H200" fill="none" />
+            </pattern>
+          </defs>
+          <svg x="50%" y="-1" class="overflow-visible fill-gray-800">
+            <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
+          </svg>
+          <rect width="100%" height="100%" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" stroke-width="0" />
+        </svg>
+        <div aria-hidden="true" class="absolute top-0 right-0 left-1/2 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48">
+          <div style="clip-path: polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)" class="aspect-801/1036 w-200.25 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"></div>
+        </div>
+        <div class="overflow-hidden">
+          <div class="mx-auto max-w-7xl px-6 pt-36 pb-32 sm:pt-60 lg:px-8 lg:pt-32">
+            <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+              <div class="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
+                <p class="mt-8 text-lg font-medium text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none text-gray-400">
+                    <h1 class="text-5xl font-semibold tracking-tight text-pretty sm:text-7xl text-white">Datenschutzerklärung</h1>
+
+                    <h2 class="mt-8 text-2xl font-semibold tracking-tight text-pretty text-white">1. Datenschutz auf einen Blick</h2>
+                    <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-white">Allgemeine Hinweise</h3>
+                    <p class="mt-8 text-lg font-medium text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none text-gray-400">
+                        Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
+                    </p>
+
+                    <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-white">Datenerfassung auf dieser Website</h3>
+                    <p class="mt-8 text-lg font-medium text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none text-gray-400">
+                        Wer ist verantwortlich für die Datenerfassung auf dieser Website?<br/>
+                        Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten
+                        können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.
+                        Wie erfassen wir Ihre Daten?</br>
+                        Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um
+                        Daten handeln, die Sie in ein Kontaktformular eingeben.
+                        Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere ITSysteme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit
+                        des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+                        Wofür nutzen wir Ihre Daten?<br/>
+                        Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere
+                        Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. Sofern über die Website Verträge
+                        geschlossen oder angebahnt werden können, werden die übermittelten Daten auch für Vertragsangebote,
+                        Bestellungen oder sonstige Auftragsanfragen verarbeitet.
+                        Welche Rechte haben Sie bezüglich Ihrer Daten?<br/>
+                        Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer
+                        gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder
+                        Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben,
+                        können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+                        Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
+                        Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
+                    </p>
+
+                    <h2 class="mt-8 text-2xl font-semibold tracking-tight text-pretty text-white">2. Hosting</h2>
+                    <p class="mt-8 text-lg font-medium text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none text-gray-400">
+                        Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
+                    </p>
+                    <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-white">IONOS</h3>
+                    <p class="mt-8 text-lg font-medium text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none text-gray-400">
+                        Anbieter ist die IONOS SE, Elgendorfer Str. 57, 56410 Montabaur (nachfolgend IONOS). Wenn Sie unsere
+                        Website besuchen, erfasst IONOS verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie
+                        der Datenschutzerklärung von IONOS:<br/>
+                        https://www.ionos.de/terms-gtc/terms-privacy.<br/>
+                        Die Verwendung von IONOS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein
+                        berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine
+                        entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art.
+                        6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den
+                        Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG
+                        umfasst. Die Einwilligung ist jederzeit widerrufbar.<br/>
+                        Auftragsverarbeitung<br/>
+                        Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes
+                        geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der
+                        gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren
+                        Weisungen und unter Einhaltung der DSGVO verarbeitet.
+                    </p>
+
+                    <h2 class="mt-8 text-2xl font-semibold tracking-tight text-pretty text-white">3. Allgemeine Hinweise und Pflichtinformationen</h2>
+                    <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-white">Datenschutz</h3>
+                    <p class="mt-8 text-lg font-medium text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none text-gray-400">
+                        Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre
+                        personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie
+                        dieser Datenschutzerklärung.
+                        Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben.
+                        Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende
+                        Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie
+                        und zu welchem Zweck das geschieht.
+                        Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail)
+                        Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
+                        möglich.<br/>
+                        Hinweis zur verantwortlichen Stelle<br/>
+                        Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br/>
+                        Beispielfirma<br/>
+                        Musterweg 10<br/>
+                        90210 Musterstadt<br/>
+                        Telefon: +49 (0) 176 57852908<br/>
+                        E-Mail: alpenteam@mail.de<br/>
+                        Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über
+                        die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.)
+                        entscheidet.<br/>
+                        Speicherdauer<br/>
+                        Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben
+                        Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein
+                        berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen,
+                        werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer
+                        personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im
+                        letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.<br/>
+                        Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser
+                        Website<br/>
+                        Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf
+                        Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien
+                        nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung
+                        personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art.
+                        49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in
+                        Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich
+                        auf Grundlage von § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur
+                        Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre
+                        Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese
+                        zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO.
+                        Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f
+                        DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden
+                        Absätzen dieser Datenschutzerklärung informiert.<br/>
+                        Empfänger von personenbezogenen Daten<br/>
+                        Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei
+                        ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich.
+                        Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer
+                        Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten
+                        an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe
+                        haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von
+                        Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen
+                        Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über
+                        gemeinsame Verarbeitung geschlossen.<br/>
+                        Widerruf Ihrer Einwilligung zur Datenverarbeitung<br/>
+                        Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine
+                        bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten
+                        Datenverarbeitung bleibt vom Widerruf unberührt.
+                        Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen<br/>
+                        Direktwerbung (Art. 21 DSGVO)<br/>
+                        WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO
+                        ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN
+                        SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN
+                        WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES
+                        PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT,
+                        ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN,
+                        WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES
+                        SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG
+                        NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE
+                        VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON
+                        RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).
+                        WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN,
+                        SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE
+                        BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG
+                        EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN
+                        VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN
+                        ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH
+                        NACH ART. 21 ABS. 2 DSGVO).<br/>
+                        Beschwerderecht bei der zuständigen Aufsichtsbehörde<br/>
+                        Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer
+                        Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes
+                        oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger
+                        verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.
+                        Recht auf Datenübertragbarkeit<br/>
+                        Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags
+                        automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format
+                        aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen
+                        verlangen, erfolgt dies nur, soweit es technisch machbar ist.<br/>
+                        Auskunft, Berichtigung und Löschung<br/>
+                        Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche
+                        Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den
+                        Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie
+                        zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.<br/>
+                        Recht auf Einschränkung der Verarbeitung<br/>
+                        Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+                        Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in
+                        folgenden Fällen:<br/>
+                        Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir
+                        in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die
+                        Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.<br/>
+                        Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie
+                        statt der Löschung die Einschränkung der Datenverarbeitung verlangen.<br/>
+                        Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung,
+                        Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der
+                        Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+                        Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen
+                        Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen
+                        überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten
+                        zu verlangen.<br/>
+                        Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von
+                        ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder
+                        Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder
+                        juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder
+                        eines Mitgliedstaats verarbeitet werden.<br/>
+                        SSL- bzw. TLS-Verschlüsselung<br/>
+                        Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum
+                        Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLSVerschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von
+                        „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+                        Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht
+                        von Dritten mitgelesen werden.
+                    </p>
+
+                    <h2 class="mt-8 text-2xl font-semibold tracking-tight text-pretty text-white">4. Datenerfassung auf dieser Website</h2>
+                    <p class="mt-8 text-lg font-medium text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none text-gray-400">
+                        Server-Log-Dateien<br/>
+                        Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-LogDateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:<br/>
+                        Browsertyp und Browserversion<br/>
+                        verwendetes Betriebssystem<br/>
+                        Referrer URL<br/>
+                        Hostname des zugreifenden Rechners<br/>
+                        Uhrzeit der Serveranfrage<br/>
+                        IP-Adresse<br/>
+                        Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.<br/>
+                        Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat
+                        ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website –
+                        hierzu müssen die Server-Log-Files erfasst werden.<br/>
+                        Anfrage per E-Mail, Telefon oder Telefax<br/>
+                        Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus
+                        hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens
+                        bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+                        Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit
+                        der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen
+                        erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der
+                        effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer
+                        Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit
+                        widerrufbar.<br/>
+                        Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung
+                        auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt
+                        (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen –
+                        insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
+                    </p>
+
+                    <p class="mt-8 text-lg font-medium text-pretty sm:max-w-md sm:text-xl/8 lg:max-w-none text-gray-400">Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>    
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- /Hero Section -->
+
+  <!-- Footer -->
+  <footer class="bg-gray-900">
+    <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+      <nav aria-label="Footer" class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
+        <a href="/datenschutz.html" class="text-gray-400 hover:text-white">Datenschutzerklärung</a>
+        <a href="/impressum.html" class="text-gray-400 hover:text-white">Impressum</a>
+      </nav>
+    </div>
+  </footer>  
+  <!-- /Footer -->
+</body>
+</html>
